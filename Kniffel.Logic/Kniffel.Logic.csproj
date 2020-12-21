@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.3" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.8.0" />
+    <PackageReference Include="MahApps.Metro.Resources" Version="0.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kniffel.Data\Kniffel.Data.csproj" />
+    <ProjectReference Include="..\Kniffel.ViewModels\Kniffel.ViewModels.csproj" />
+    <ProjectReference Include="..\Kniffel\Kniffel.csproj" />
+  </ItemGroup>
+
+</Project>
