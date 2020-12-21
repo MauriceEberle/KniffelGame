@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Kniffel.Views.ShellView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Kniffel.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1400">
+    <DockPanel>
+
+        <ContentPresenter DockPanel.Dock="Left" Content="{Binding GameControlViewModel}"/>
+        <DockPanel>
+            <Border Width="1" Background="Black"/>
+            <Border Background="#3B4554">
+                <ContentPresenter DockPanel.Dock="Left" Content="{Binding GameCenterViewModel}"/>
+            </Border>
+            <Border>
+                <ContentPresenter DockPanel.Dock="Left" Content="{Binding GameActionViewModel}"/>
+            </Border>
+        </DockPanel>
+    </DockPanel>
+</UserControl>
